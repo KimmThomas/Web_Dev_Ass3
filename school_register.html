@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School Form</title>
+    <style>
+
+h1{
+        font-weight: 20px;
+        font-size: 30px;
+        text-shadow:0px 0px 2px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 40px;
+        width: 50%;
+        height: 50%;
+        backdrop-filter: brightness(15%);
+        gap: 5px;
+      }
+
+      label{
+        color: rgb(103, 183, 215);
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 2px;
+        padding-left: 0px;
+      }
+
+      legend{
+        color: rgb(103, 183, 215);
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding: 0px;
+      }
+
+      input{
+        background: rgba(255, 255, 255, 0.9);
+        height: 40px;
+        line-height: 40px;
+        border-radius: 20px;
+        padding: 0px 20px;
+        border: none;
+        margin-bottom: 20px;
+        color: black;
+      }
+
+        #register{
+        background-color: darkgreen;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        border: none;
+        margin: 10px 0px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      #cancel{
+        background-color: darkred;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 40px;
+        border: none;
+        margin: 10px 0px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+        color: white;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container"> <!--I was trying to center the form-->
+      <h1>School Register</h1>
+      <form action="School_Form.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Input your name">
+        <fieldset>
+          <legend>Gender:</legend>
+          <input type="checkbox" name="male" id="gender" value="male">
+          <label for="male">Male</label>
+
+          <input type="checkbox" name="female" id="gender" value="female">
+          <label for="female">Female</label>
+        </fieldset>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" placeholder="Enter your address">
+        <br>
+        <label for="telephone">Telephone</label>
+        <input type="text" name="telephone" id="telephone" placeholder="Enter your phone number">
+        <br>
+        <label for="email">Email Address</label>
+        <input type="text" name="email" id="email" placeholder="Enter your email">
+        <br>
+        <label for="course">Select your course:</label>
+        <select id="course" name="course">
+          <option value=""></option>
+          <option value="science">Science</option>
+          <option value="English">English</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="Math">Math</option>
+        </select>
+        <br>
+        <button type="Register" id="register">Register</button>
+        <button type="Cancel" id="cancel">Cancel</button>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+<!--Gather the following information using the relevent form elements:
+
+Name
+Date of Birth
+Gender
+Address
+Telephone
+Email Address
+Course
+The form should have two buttons:
+
+Register
+Cancel-->
